@@ -14,6 +14,9 @@ Uploaded in: 18/07/25
 
 Welcome to my Astro blog! Here I will share my learning route meanwhile I build this new website.
 
+**Notice!!**
+This is more like a Logbook than a useful blog. But if you are interested on the same tutorial and you are wondering where to find it, you can [**click here**](https://docs.astro.build/es/tutorial/0-introduction/) to find it!
+
 ## What I've acomplised
 
 1. **Astro instalation**: Firstly, I've created a new Astro project and also linked it to my online dev accounts.
@@ -24,5 +27,6 @@ Welcome to my Astro blog! Here I will share my learning route meanwhile I build 
 
 ## Next steps
 
-I will finish this Astro tutorial, and then I'll keep adding more posts. (This is more like a Logbook than a useful blog, but if you are interested on the same tutorial and you are wondering where to find it, I will add an url to this text in the future) (I found the tutorial on the official Astro webstie)
+I will finish this Astro tutorial, and then I'll keep adding more posts. 
+
 
