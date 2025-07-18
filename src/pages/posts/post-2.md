@@ -17,6 +17,6 @@ This is more like a Logbook than a useful blog. But if you are interested on the
 
 ## What else I've done
 
-Today I also learned how to add a link on a MarkDown file! They teach it on WW3 Schools, you can access to the info [here](https://www.w3schools.io/file/markdown-links/).
+Today I also learned how to add a link on a MarkDown file! They teach it on WW3 Schools, you can access to the info [**here**](https://www.w3schools.io/file/markdown-links/).
 
 It's so easy!
