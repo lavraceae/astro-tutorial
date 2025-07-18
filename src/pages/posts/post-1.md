@@ -2,9 +2,9 @@
 title: 'My first post on the blog'
 pubDate: 2025-07-18
 description: 'This is my firts post on my blog related to Astro knowledge.'
-author: 'Alumna de Astro'
+author: 'Astro learner'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-dark.png'
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'Full Astro logo'
 tags: ["astro", "blogging", "newbie", "trainee"]
 ---
