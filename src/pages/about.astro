@@ -16,6 +16,8 @@ const happy = true;
 const finished = false;
 
 const goal = 1;
+
+const skillColor = "navy";
 ---
 
 <html lang="en">
@@ -40,6 +42,9 @@ const goal = 1;
 				color: white;
 			}
 
+			.skill {
+				color: var(--skillColor);
+			}
 
 
 
@@ -54,7 +59,7 @@ const goal = 1;
 
 		<p>I'm a {identity.occupation} who is bridging to front-end development.</p>
         <p>I'm such a newbie, but I spend a little every day!</p>
-		<ul>For now my skills are basic: {skills.map((skill) => <li>{skill}</li>)}</ul>
+		<ul>For now my skills are basic: {skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
 
 		<p>There are here some facts about me:</p>
 
