@@ -1,5 +1,15 @@
 ---
 const pageTitle = 'Sobre mí';
+
+const identity = {
+  firstName: "Laura",
+  country: "Spain",
+  occupation: "graphic design student",
+  hobbies: ["illustration", "cooking", "reading"],
+  selfcare: ["meditation", "bowspring"],
+};
+
+const skills = ["HTML", "CSS", "Document redactation"];
 ---
 
 <html lang="en">
@@ -10,14 +20,28 @@ const pageTitle = 'Sobre mí';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<>
         <a href="/">Home</a>
         <a href="/about/">{pageTitle}</a>
         <a href="/blog/">Blog</a>
 
 		<h1>{pageTitle}</h1>
 
-		<p>I'm a graphic design student who is bridging to front-end development.</p>
+		<p>I'm a {identity.occupation} who is bridging to front-end development.</p>
         <p>I'm such a newbie, but I spend a little every day!</p>
+		<ul>For now my skills are basic: {skills.map((skill) => <li>{skill}</li>)}</ul>
+
+		<p>There are here some facts about me:</p>
+
+		<ul>
+			<li>My name is {identity.firstName}.</li>
+			<li>I live in {identity.country}.</li>
+			{identity.hobbies.length >= 2 && identity.selfcare.length >= 1 &&
+			<li>I barely have free time. And when I have it, my priority are dev tutorials. But I also try to find a while for enjoying my main hobby, which is {identity.hobbies[0]}. 
+			I also like {identity.hobbies[2]} and {identity.hobbies[1]}.</li>} To recovery energy I do {identity.selfcare[0]}, and move my body doing {identity.selfcare[1]} to unlock it.
+		
+		</ul>
+
+
 	</body>
 </html
