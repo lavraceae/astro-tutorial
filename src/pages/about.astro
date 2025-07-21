@@ -10,6 +10,12 @@ const identity = {
 };
 
 const skills = ["HTML", "CSS", "Document redactation"];
+
+const happy = true;
+
+const finished = false;
+
+const goal = 1;
 ---
 
 <html lang="en">
@@ -41,6 +47,10 @@ const skills = ["HTML", "CSS", "Document redactation"];
 			I also like {identity.hobbies[2]} and {identity.hobbies[1]}.</li>} To recovery energy I do {identity.selfcare[0]}, and move my body doing {identity.selfcare[1]} to unlock it.
 		
 		</ul>
+
+		{happy && <p>I'm happy learning Astro!</p>}
+		{finished && <p>I've finished the tutorial!</p>}
+		{goal === 1 && <p>My goal is to finish the tutorial in 1 week.</p>}
 
 
 	</body>
