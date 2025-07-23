@@ -3,6 +3,13 @@ import Social from "./Social.astro";
 const platform = "github";
 const username = "lavraceae";
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
   <p>More info on my projects on: <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
