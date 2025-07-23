@@ -1,5 +1,5 @@
 ---
-title: 'My first post on the blog'
+title: 'My second post on the blog'
 pubDate: 2025-07-18
 description: 'This is my second post on my blog related to Astro knowledge.'
 author: 'Astro learner'
