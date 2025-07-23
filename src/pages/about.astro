@@ -1,5 +1,6 @@
 ---
 import '../styles/globals.css';
+import Navigation from '../components/Navigation.astro';
 
 const pageTitle = 'About';
 const identity = {
@@ -53,9 +54,7 @@ const fontCase = "uppercase";
 		</style>
 	</head>
 	<>
-        <a href="/">Home</a>
-        <a href="/about/">{pageTitle}</a>
-        <a href="/blog/">Blog</a>
+        <Navigation />
 
 		<h1>{pageTitle}</h1>
 
