@@ -1,46 +1,7 @@
 ---
-import '../styles/globals.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<style>
-
-			body {
-				background-color: black;
-			}
-
-			h1, a:visited{
-				color: plum;
-			}
-
-			p, a {
-				color: white;
-			}
-
-
-
-		</style>
-	</head>
-	<body>
-		<Header />
-
-		<h1>Lauraceae's cozy blog</h1>
-
-		<p>Hi everyone! I'm developing my first blog supported by Astro as my first Astro project.</p>
-
-		<Footer />
-
-		<script>
-    		import '../scripts/menu.js';
- 		</script>
-	</body>
-</html>
-
+<BaseLayout>
+	<h2>Wow! I just learned how to use a layout componen and I'm freaking out!</h2>
+</BaseLayout>
