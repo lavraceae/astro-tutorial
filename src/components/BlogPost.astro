@@ -1,0 +1,6 @@
+---
+const { frontmatter, url } = Astro.props;
+const titleWithOrdinal = `${frontmatter.ordinal} ${frontmatter.title}`;
+---
+<li><a href={url}>{titleWithOrdinal}</a></li>
+<slot />
