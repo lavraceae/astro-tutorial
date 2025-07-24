@@ -14,13 +14,12 @@ const skills = ["HTML", "CSS", "Document redactation"];
 const happy = true;
 const finished = false;
 const goal = 1;
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const fontCase = "uppercase";
 ---
 
-<BaseLayout pageTitle="About">
+<BaseLayout pageTitle={pageTitle}>
+	<h2>About me</h2>
+	<p>Hi! I'm Laura, a graphic design student who is learning Astro.</p>
+	<p>I'm currently learning Astro to improve my front-end development skills.</p>
 	<p>I'm a {identity.occupation} who is bridging to front-end development.</p>
     <p>I'm such a newbie, but I spend a little every day!</p>
 	<ul>For now my skills are basic: {skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
