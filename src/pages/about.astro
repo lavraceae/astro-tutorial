@@ -1,8 +1,5 @@
 ---
-import '../styles/globals.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = 'About';
 const identity = {
@@ -23,62 +20,23 @@ const fontWeight = "bold";
 const fontCase = "uppercase";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<style>
+<BaseLayout pageTitle="About">
+	<p>I'm a {identity.occupation} who is bridging to front-end development.</p>
+    <p>I'm such a newbie, but I spend a little every day!</p>
+	<ul>For now my skills are basic: {skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
 
-			body {
-				background-color: purple;
-			}
+	<p>There are here some facts about me:</p>
 
-			h1, a:visited{
-				font-size: 40px;
-				color: silver;
-			}
-
-			p, a {
-				color: white;
-			}
-
-			.skill {
-				color: var(--skillColor);
-				font-weight: var(--fontWeight);
-				font-case: var(--fontCase);
-			}
-
-
-
-		</style>
-	</head>
-	<body>
-		<Header />
-
-		<h1>{pageTitle}</h1>
-
-		<p>I'm a {identity.occupation} who is bridging to front-end development.</p>
-        <p>I'm such a newbie, but I spend a little every day!</p>
-		<ul>For now my skills are basic: {skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
-
-		<p>There are here some facts about me:</p>
-
-		<ul>
-			<li>My name is {identity.firstName}.</li>
-			<li>I live in {identity.country}.</li>
+	<ul>
+		<li>My name is {identity.firstName}.</li>
+		<li>I live in {identity.country}.</li>
 			{identity.hobbies.length >= 2 && identity.selfcare.length >= 1 &&
-			<li>I barely have free time. And when I have it, my priority are dev tutorials. But I also try to find a while for enjoying my main hobby, which is {identity.hobbies[0]}. 
+		<li>I barely have free time. And when I have it, my priority are dev tutorials. But I also try to find a while for enjoying my main hobby, which is {identity.hobbies[0]}. 
 			I also like {identity.hobbies[2]} and {identity.hobbies[1]}.</li>} To recovery energy I do {identity.selfcare[0]}, and move my body doing {identity.selfcare[1]} to unlock it.
 		
-		</ul>
+	</ul>
 
-		{happy && <p>I'm happy learning Astro!</p>}
-		{finished && <p>I've finished the tutorial!</p>}
-		{goal === 1 && <p>My goal is to finish the tutorial in 1 week.</p>}
-
-		<Footer />
-	</body>
-</html
+	{happy && <p>I'm happy learning Astro!</p>}
+	{finished && <p>I've finished the tutorial!</p>}
+	{goal === 1 && <p>My goal is to finish the tutorial in 1 week.</p>}
+<BaseLayout/>
