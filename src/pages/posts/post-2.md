@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/MarkdownPostLayout.astro
+layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'post on the blog'
 ordinal: 'second'
 pubDate: 2025-07-18
