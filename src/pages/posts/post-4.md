@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPostLayout.astro'
 title: 'post on the blog'
 ordinal: 'fourth'
 pubDate: 2025-07-18
-author: 'Astro learner'
+author: 'Laura'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'Full Astro logo'
