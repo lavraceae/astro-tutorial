@@ -1,0 +1,20 @@
+---
+const { frontmatter } = Astro.props;
+const titleWithOrdinal = `My ${frontmatter.ordinal} ${frontmatter.title}`;
+---
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<html>
+    <body>
+        <h1>{titleWithOrdinal}</h1>
+        <p>Written by {frontmatter.author}</p>
+        <p>Published on {frontmatter.pubDate}</p>
+
+        <p>This is my {frontmatter.ordinal} post.</p>
+        <p>Notice!! This is more like a Logbook than a useful blog. But if you are interested on the same tutorial and you are wondering where to find it,</p>
+        <a href="https://docs.astro.build/es/tutorial/0-introduction/">click here to find it!</a>
+        <slot />
+    </body>
+</html>
