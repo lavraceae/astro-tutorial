@@ -1,15 +1,14 @@
 ---
-title: 'My first post on the blog'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'post on the blog'
+ordinal: 'first'
 pubDate: 2025-07-18
-description: 'This is my firts post on my blog related to Astro knowledge.'
-author: 'Astro learner'
+author: 'Laura'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'Full Astro logo'
 tags: ["astro", "blogging", "newbie", "trainee"]
 ---
-# My first post on the blog
-
 Uploaded in: 18/07/25
 
 Welcome to my Astro blog! Here I will share my learning route meanwhile I build this new website.
