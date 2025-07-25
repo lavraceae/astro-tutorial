@@ -1,6 +1,6 @@
 ---
-const { frontmatter, url } = Astro.props;
-const titleWithOrdinal = `${frontmatter.ordinal} ${frontmatter.title}`;
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const { frontmatter, url, title } = Astro.props;
 ---
-<li><a href={url}>{titleWithOrdinal}</a></li>
+<li><a href={url}>{title}</a></li>
 <slot />
