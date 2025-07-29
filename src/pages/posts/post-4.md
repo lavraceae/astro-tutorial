@@ -7,7 +7,7 @@ author: 'Laura'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'Full Astro logo'
-tags: ["astro", "blogging", "newbie", "trainee"]
+tags: ["astro", "blogging", "newbie", "trainee", "components", "successes"]
 ---
 
 ## What I've learned yesterday
