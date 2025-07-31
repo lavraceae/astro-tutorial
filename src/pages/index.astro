@@ -1,7 +1,9 @@
 ---
+import Greeting from '../components/Greeting';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout pageTitle = "Lauraceae's blog">
+	<Greeting client:load messages={["Hej.", "Hallo.", "Hola.", "Habari.", "Hello.", "ⴰⴻⵓⵍ.", "ननमस्ते।", "こんにちは。"]} />
 	<h2>Welcome to this place, stay cozy. This is a blog related to Astro learning.</h2>
 </BaseLayout>
