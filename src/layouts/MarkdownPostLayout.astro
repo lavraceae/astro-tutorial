@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import TagList from "../components/TagList.astro";
 const { frontmatter } = Astro.props;
 const titleWithOrdinal = `My ${frontmatter.ordinal} ${frontmatter.title}`;
 ---
@@ -15,4 +16,6 @@ const titleWithOrdinal = `My ${frontmatter.ordinal} ${frontmatter.title}`;
         <p>Notice!! This is more like a Logbook than a useful blog. But if you are interested on the same tutorial and you are wondering where to find it,</p>
         <a href="https://docs.astro.build/es/tutorial/0-introduction/">click here to find it!</a>
         <slot />
+
+        <TagList />
 </BaseLayout>
