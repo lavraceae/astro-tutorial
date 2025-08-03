@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: 'post on the blog'
 ordinal: 'first'
 pubDate: 2025-07-18
