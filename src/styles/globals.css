@@ -54,6 +54,15 @@ h1 {
   background-color: #E15442;
 }
 
+a {
+  color:#fde5a3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fde5a3;
+} 
+
 .expanded {
   display: unset;
 }
