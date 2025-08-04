@@ -1,5 +1,5 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #E0BB67;
   font-family: sans-serif;
 }
 
@@ -26,7 +26,7 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #E15442;
   display: none;
   margin: 0;
 }
@@ -41,9 +41,17 @@ h1 {
   text-transform: uppercase;
 }
 
+.nav-links {
+  color:#fde5a3;
+}
+
+.nav-links a:visited {
+  color: #fde5a3;
+}
+
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #E15442;
 }
 
 .expanded {
@@ -76,14 +84,14 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #E15442;
 }
 
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #244D2F;
+  color: #B3E09E;
 }
 
 .dark .nav-links {
-  color: #fff;
+  color: #B3E09E;
 }
