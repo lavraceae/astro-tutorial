@@ -8,6 +8,11 @@ const { platform, username } = Astro.props;
     background-color: rgb(115, 65, 0);
     text-decoration: none;
   }
+
+  html.dark a {
+  color: white;
+  background-color: #709f5a;
+  }
 </style>
 
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
