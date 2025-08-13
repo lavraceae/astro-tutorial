@@ -1,6 +1,7 @@
 html {
   background-color: #E0BB67;
   font-family: sans-serif;
+  color:rgb(58, 33, 1)
 }
 
 body {
@@ -26,7 +27,7 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #E15442;
+  background-color:rgb(115, 65, 0);
   display: none;
   margin: 0;
 }
@@ -51,7 +52,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #E15442;
+  background-color: rgb(115, 65, 0);
 }
 
 a {
@@ -93,7 +94,7 @@ a:visited {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #E15442;
+  background-color: rgb(115, 65, 0);
 }
 
 html.dark {
@@ -104,3 +105,17 @@ html.dark {
 .dark .nav-links {
   color: #B3E09E;
 }
+
+.dark .nav-links a:hover, 
+.dark .nav-links a:focus {
+  background-color: #709f5a;
+}
+
+.dark .hamburger .line {
+  background-color: #B3E09E;
+}
+
+.dark .nav-links a:visited {
+  color: #d0eac4;
+}
+
